@@ -1,0 +1,28 @@
+: root 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../9090.jpg');
+    background-size: cover;
+}
+main {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 20px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .profile {
+    display: flex;
+    gap: 50px;
+}
+legend {
+    padding: 50px;
+}
