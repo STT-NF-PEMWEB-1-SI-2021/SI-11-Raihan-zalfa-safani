@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                margin: 0;
+            }
+            #main {
+                display: flex;
+                flex: 1;
+            }
+            #main > article {
+                flex: 1;
+                order: 1;
+            }
+            header, footer {
+                 background: khaki;
+                 height: 20vh;
+            }
+            header,footer,article,nav,aside {
+                 padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header> 
+            <p>Hello everyone, Welcome to My Website</p>
+        </header>
+        <div id="main">
+            <article>
+                <h1>Zaman Klasik (1700-1910an)</h1>
+                <p>Klasik era (era klasik Barat) berhubungan erat dengan harmoni. 
+                Beberapa hasil karya dari masa ini merupakan hasil karya yang tidak 
+                dapat dibandingkan dengan karya apa pun pada masa sebelumnya, 
+                seperti karya Beethoven berjudul Fifth Symphony. 
+                Haydn dan Mozart adalah musisi yang menjadi 'kunci' di era ini. 
+                Di akhir era Klasik, musisi menggubah musik dengan tambahan 
+                instrumen selain piano, seperti  klarinet, trombon, dan timpani.</p>
+            </article>
+        </div>
+        <footer>
+            <p class="text-center bg-dark text-white p-3">@copyright @2021</p> 
+        </footer>
+    </body> 
+</html>

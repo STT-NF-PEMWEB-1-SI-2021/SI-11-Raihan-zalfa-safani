@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                margin: 0;
+            }
+            #main {
+                display: flex;
+                flex: 1;
+            }
+            #main > article {
+                flex: 1;
+                order: 1;
+            }
+            header, footer {
+                 background: khaki;
+                 height: 20vh;
+            }
+            header,footer,article,nav,aside {
+                 padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header> 
+            <p>Hello everyone, Welcome to My Website</p>
+        </header>
+        <div id="main">
+            <article>
+                <h1>Zaman Romantik (1810-1900an)</h1>
+                <p>Pada era ini, karya-karya pada era romantik memiliki 
+                komposisi perasaan emosi yang kuat dan makna yang dalam. 
+                Dari karya Schumann sampai Wagner, komposisi menjadi 
+                lebih kompleks sebagai simbol dari beberapa karya yang 
+                dramatis seperti Siegfried karya milik Wagner. 
+                Tidak lupa, Hector Berlioz dengan karyanya yang 
+                diberi judul "Symphonie Fantastique".</p>  
+            </article>
+        </div>
+        <footer>
+            <p class="text-center bg-dark text-white p-3">@copyright @2021</p> 
+        </footer>
+    </body> 
+</html>
