@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h3>Kalkulator Sederhana</h3>
+    <hr/>
+    <div>
+        <input type="number" id="angka1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="angka2">
+        <span></span>
+        <span id="hasil">hasil</span><br><br>
+        <button id="submit">Submit</button>
+    </div>
+    <script>
+        const angka1 = document.getElementById('angka1')
+        const angka2 = document.getElementById('angka2')
+        const operator = document.getElementById
+        ('operator')
+        const hasil = document.getElementById('hasil')
+        const submit = document.getElementById('submit')
+
+        submit.addEventListener('click', function(){
+            hasil.innerText = eval(angka1.value +
+            operator.value + angka2.value)
+        })
+    </script>
+</body>
+</html>
