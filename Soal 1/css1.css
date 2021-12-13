@@ -1,0 +1,39 @@
+div	{
+	margin: auto ;
+	width: 400px;
+	margin-top: 100px;
+}
+table {
+	border-style: none;
+	border-collapse: collapse;
+	width: 100%;
+}
+th{
+	background-color: #f44336;
+	padding: 5px;
+	border: none;
+	font-size: 16px;
+}
+td{
+	border: none;
+}
+input[type=text]{
+	padding: 10px;
+	width: 380px;
+	border-style: solid;
+	border-color: #6d6e6a;
+	font-size: 16px;
+}
+input[type=text]:disabled{
+	background-color: white;
+}
+button {
+	width: 100%;
+	height: 40px;
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
