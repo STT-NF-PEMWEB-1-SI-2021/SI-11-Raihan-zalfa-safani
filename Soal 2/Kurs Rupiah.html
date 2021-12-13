@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function hitung() {
+            const dollar = 14650; //konstanta
+            let rupiah = document.getElementById("rupiah").value;
+            console.log("Rupiah : Rp." + rupiah);
+            let hasil_dollar = rupiah / dollar
+            console.log("Dollar : $ zazaa" + hasil_dollar);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "  $" + hasil_dollar;
+        }
+    </script>
+    <title>Menghitung Kurs Rupiah</title>
+</head>
+
+<body>
+    <h3>Menghitung Rupiah Ke Dollar</h3>
+    Masukan jumlah rupiah :
+    <input type="number" value="" size="10" id="rupiah">
+    <br />
+    <button onclick="hitung()">Hitung</button>
+    <br />Dalam Dollar : <span id="hasil"></span>
+</body>
+</html>
