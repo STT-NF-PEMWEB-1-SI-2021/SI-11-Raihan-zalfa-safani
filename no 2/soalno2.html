@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        background-color: aqua;
+        margin: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Kurs Rupiah + Mata Uang Asing</legend>
+      <table>
+        <tr>
+          <td>Masukan Nilai</td>
+          <td>Valas</td>
+          <td>Nilai Rupiah</td>
+        </tr>
+        <tr>
+          <td><input type="text" id="bil" value="" onchange="hitung()" /></td>
+          <td>
+            <select id="valas">
+              <option value="Dollar US">Dollar US</option>
+              <option value="Dollar Singapore">Dollar Singapore</option>
+              <option value="Ringgit Malaysia">Ringgit Malaysia</option>
+              <option value="Yen Jepan">Yen Jepang</option>
+              <option value="Euro">Euro</option>
+              <option value="Riyal Arab Saudi">Riyal Arab Saudi</option>
+            </select>
+          </td>
+          <td><input type="text" value="" id="bilrp" /></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <script>
+      function hitung() {
+        let bil = document.getElementById("bil");
+        let valas = document.getElementById("valas");
+
+        if (valas.value === "Dollar US") {
+          const dolus = 9915;
+          console.log(bil.value * dolus);
+
+          document.getElementById("bilrp").value = bil.value * dolus;
+        } else if (valas.value === "Dollar Singapore") {
+          const dolsing = 13472;
+          console.log(bil.value * dolsing);
+
+          document.getElementById("bilrp").value = bil.value * dolsing;
+        } else if (valas.value === "Ringgit Malaysia") {
+          const ringmay = 874;
+          console.log(bil.value * ringmay);
+
+          document.getElementById("bilrp").value = bil.value * ringmay;
+        } else if (valas.value === "Yen Jepan") {
+          const yen = 120;
+          console.log(bil.value * yen);
+
+          document.getElementById("bilrp").value = bil.value * yen;
+        } else if (valas.value === "Euro") {
+          const euro = 15888;
+          console.log(bil.value * euro);
+
+          document.getElementById("bilrp").value = bil.value * euro;
+        } else if (valas.value === "Riyal Arab Saudi") {
+          const riyal = 3592;
+          console.log(bil.value * riyal);
+
+          document.getElementById("bilrp").value = bil.value * riyal;
+        }
+      }
+    </script>
+  </body>
+</html>
