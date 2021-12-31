@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Pilih Gambar yang Disukai</h3>
+        <br>
+        <br>
+        <table style="border: solid 1px;">
+            <tr>
+                <td>
+                    <label for="kopi">Pilihlah Salah Satu Kopi</label><br>
+                    <select id="kopi" onclick="cetak_gambar()">
+                        <option value="korikohi">Korikohi</option>
+                        <option value="affogato">Affogato</option>
+                        <option value="americano">Americano</option>
+                        <option value="blackcoffee">Blackcoffee</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    <br>
+        <div id="img" style="margin: auto;">
+            <img src="" id="gambar">
+        </div>
+    </div>
+    <script>
+        function cetak_gambar() {
+            const kopi = document.getElementById("kopi");
+            const gambar = document.getElementById("gambar");
+            const img = document.getElementById("img");
+
+            if (kopi.value === "korikohi"){
+                    gambar.src = "korikohi.jpg"
+                }
+    
+            if (kopi.value === "affogato"){
+                    gambar.src = "affogatocoffe2.jpg"
+                }
+            
+            if (kopi.value === "americano"){
+                    gambar.src = "americanocoffee1.png"
+                }
+            
+            if (kopi.value === "blackcoffee"){
+                    gambar.src = "blackcoffee2.jpg"
+                }
+        }
+    </script>
+</body>
+</html>
