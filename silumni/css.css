@@ -1,0 +1,72 @@
+.navbar{
+    background-color: rgb(35, 86, 216);
+}
+
+.nav-link{
+    margin-right: 30px;
+}
+
+.jumbotron{
+    background-image: url("img/gedung.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 680px;
+    margin-top: -10px;
+}
+.jumbotron .display-4{
+    color: white;
+    font-size: 35px;
+    margin-top: 150px;
+}
+.jumbotron .lead{
+    color: white;
+}
+.jumbotron p{
+    color: white;
+}
+.jumbotron hr{
+    border-color: #F05F40;
+    width: 100px;
+    border-width: 3px;
+}
+.jumbotron .btn{
+    background-color: #F05F40;
+    border: none;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+}
+.nav-link:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #F05F40;
+}
+
+.login{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.regis{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.berita{
+    margin-top: 80px;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 2px solid #F05F40;
+        width: 50%;
+        margin: auto;
+    }
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+}

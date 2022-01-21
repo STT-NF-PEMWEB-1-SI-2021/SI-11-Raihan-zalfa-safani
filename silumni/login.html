@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="icon" href="img/logo.png" type="png" sizes="16x16">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand  font-weight-bold text-white" href="#">SILUMNI-STTNF</a>
+        <button class="navbar-toggler navbar-toggler-right bg-white type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+            <a class="nav-link js-scroll-trigger text-white" href="Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger text-white" href="loker.html">Loker</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link js-scroll-trigger text-white" href="login.html">Login</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+    <!-- Main content -->
+    <div class="login content d-flex justify-content-center">
+      <div class="login-box  ">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+          <div class="card-header text-center">
+            <a href="Home.html" class="h1"><b>Login</b></a>
+          </div>
+          <div class="card-body">
+            <p class="login-box-msg">Sign in to start your account</p>
+      
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="admin" id="username" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="1234" id="password" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <div class="icheck-primary">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">
+                      Remember Me
+                    </label>
+                  </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                  <button type="submit" class="btn btn-primary btn-block" onclick="masukakun();">Sign In</button>
+                </div>
+                <!-- /.col -->
+              </div>
+      
+            <div class="social-auth-links text-center mt-2 mb-3">
+              <a href="#" class="btn btn-block btn-primary">
+                <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+              </a>
+              <a href="#" class="btn btn-block btn-danger">
+                <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+              </a>
+            </div>
+            <!-- /.social-auth-links -->
+      
+            <p class="mb-1">
+              <a href="forgot-password.html">I forgot my password</a>
+            </p>
+            <p class="mb-0">
+              <a href="register.html" class="text-center">Register a new membership</a>
+            </p>
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      <li class="fab fa-instagram  mr-2"></li>
+          <li class="fab fa-twitter  mr-2"></li>
+          <li class="fab fa-facebook  mr-2"></li>
+          <li class="fab fa-youtube mr-3"></li>
+    </div>
+    <!-- Default to the left -->
+    <strong>Developer &copy; 2022 <a href="https://adminlte.io">GBWeb</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<script>
+  function masukakun(){
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if((username == "admin") && (password == "1234")){
+        alert("Login Berhasil");
+        window.location.href=("mahasiswa.html")
+        
+      }
+      if((username == "") || (password == "")){
+          alert("form tidak boleh kosong")
+      }
+      else{
+        alert("Login Gagal")
+      }
+  }
+</script>
+</body>
+</html>
